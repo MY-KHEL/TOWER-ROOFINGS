@@ -1,0 +1,87 @@
+.card{
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    color: var(--black);
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+button.accordion {
+    background-color:var(--orange);
+    color: var(--black);
+    border: 2px solid #343a40;
+    cursor: pointer;
+    padding: .7rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    transition: 0.7s;
+    border-bottom: 2px solid var(--black);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #343a40;
+    color: var(--orange);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 1rem 0rem;
+    background-color: #343a40;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content and Adding the Icons */
+div.panel.show {
+    display: block;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #343a40;
+    float: right;
+    margin-left: 5px;
+    border: none;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.sheets{
+    margin: auto;
+   
+}
+.h2{
+    font-size: 1.7rem;
+    color: var(--white);
+    font-weight: normal;
+    background-color: var(--orange);
+    padding: .7rem;
+    border: 1px solid var(--white);
+    margin: 0%;
+    text-align: center;
+    
+
+}
+tr{
+    border: 1px solid var(--white);
+}
+td{
+    font-size: 1.3rem;
+    color: var(--white);
+    border: 1px solid var(--white);
+
+}
+@media screen and (max-width:280px){
+    th{
+        font-size: 1.1rem;
+    }
+    td{
+        font-size: 1rem;
+    }
+}

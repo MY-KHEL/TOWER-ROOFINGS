@@ -1,0 +1,53 @@
+.card{
+    background-color: var(--white);
+    border: 1px solid var(--orange);
+    color: var(--black);
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+button.accordion {
+    background-color:#c7630c;
+    color: var(--black);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    transition: 0.7s;
+    border-bottom: 2px solid #5a5757;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #000000;
+    color: var(--orange);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content and Adding the Icons */
+div.panel.show {
+    display: block;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #343a40;
+    float: right;
+    margin-left: 5px;
+    border: none;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

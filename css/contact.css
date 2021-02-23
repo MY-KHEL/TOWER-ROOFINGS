@@ -1,0 +1,61 @@
+.right{
+    border-right: 2px dashed white;
+}
+.label{
+    font-size: 1.3rem;
+    color: white;
+    }
+
+.control{
+    position: relative;
+    
+}
+.control i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    visibility: hidden;
+}
+.control input{
+    border-radius: 4px;
+}
+.control.error i.fas{
+    color: red;
+    visibility: visible;
+}
+.control.success i.far{
+   color: rgb(21, 195, 15);
+    visibility: visible;
+}
+.control.success input{
+border-color: rgb(21, 195, 15);
+border-width: 2px;
+border-radius: 4px;
+}
+.control.error input{
+border-color: red;
+border-width: 2px;
+border-radius: 4px;
+}
+.control.error small{
+    color: red;
+}
+.control.success small{
+    color: rgb(21, 195, 15);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .right{
+        border-right: none;
+        border-bottom: 1px dashed white;
+        padding-bottom: 1rem;
+    }
+
+}

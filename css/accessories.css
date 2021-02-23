@@ -1,0 +1,18 @@
+.accessories-details{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.row-2{
+    border-top: 1px solid white;
+}
+.row-1{
+    border-bottom:1px solid white;
+}
+
+@media screen and (max-width:768px){
+    .accessories-details{
+        border-bottom: 1px solid white;
+       
+    }
+
+}

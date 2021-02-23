@@ -1,0 +1,7 @@
+header{
+    background-image: none;
+}
+.main{
+    background-image: url('../images/roofsheet2.jpg');
+    background-attachment: fixed;
+}
