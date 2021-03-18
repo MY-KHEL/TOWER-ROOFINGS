@@ -40,7 +40,7 @@ function checkInputs(){
   }
 
   if(wordValue==''){
-      setErrorFor(word,'Just write something')
+      setErrorFor(word,'Please address is needed')
   }else{
   setSuccessFor(word,'Thanks for Abiding')
 }
